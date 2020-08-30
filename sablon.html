@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            text-align: center;
+            box-sizing :border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body{margin:0;}
+        header {
+            background-color:#f1f1f1;
+            height: 150px;
+           padding:30px;
+        }
+        
+        main {
+            width:80%;
+           margin: auto;
+        }
+
+        .row {
+            margin: 50px 0;
+        }
+
+        .row:after {
+            content: "";
+            display: table; /*dikey ortalama*/
+            clear: both;/* floatları temizler*/
+        }
+
+        .row div {
+            padding: 30px;
+            height: 400px;
+            float: left;
+        }
+
+        .col-100 {
+            width: 100%;
+        }
+
+        .col-50 {
+            width: 50%;
+        }
+
+        .col-20 {
+            width: 20%;
+        }
+
+        .col-80 {
+            width: 80%;
+        }
+
+        .col-60 {
+            width: 60%;
+        }
+        .col-33 {
+            width: 33.3%;
+        }
+        footer {
+            background-color:#f1f1f1;
+            height: 350px;
+           padding:10px;
+        }
+        @media screen and (max-width: 768px){
+            .row div {
+           width: 100%;
+        }} 
+        
+    </style>
+</head>
+
+<body>
+    <header><h1>Header</h1></header>
+    <main>
+        <div class="row">
+            <div class="col-100" style="background-color:#eee">content</div>
+        </div>
+        <div class="row">
+            <div class="col-50" style="background-color:#eee">content</div>
+            <div class="col-50" style="background-color:#ddd">content</div>
+        </div>
+        <div class="row">
+            <div class="col-20" style="background-color:#eee">content</div>
+            <div class="col-80" style="background-color:#ddd">content</div>
+        </div>
+        <div class="row">
+
+            <div class="col-20" style="background-color:#eee">content</div>
+            <div class="col-60" style="background-color:#ddd">content</div>
+            <div class="col-20" style="background-color:#eee">content</div>
+        </div>
+        <div class="row">
+
+            <div class="col-33" style="background-color:#eee">content</div>
+            <div class="col-33" style="background-color:#ddd">content</div>
+            <div class="col-33" style="background-color:#eee">content</div>
+        </div>
+       
+    </main>
+    <footer><p>Footer</p></footer>
+</body>
+
+</html>
